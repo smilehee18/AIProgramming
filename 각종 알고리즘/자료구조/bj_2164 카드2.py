@@ -1,6 +1,7 @@
 '''
-Queue 모듈 -> 시간복잡도 O(N)
-deque 모듈 -> 양쪽 끝에서 아이템을 추가하거나 제거 가능 O(1)
+Queue 모듈 -> que.get() -> que.put() 큐를 순회 : 시간복잡도 O(N)
+deque 모듈 -> 양쪽 끝에서 아이템을 추가하거나 제거 가능, popleft() -> rotate() : 상수 연산 복잡도 O(1)
+depue 모듈이 Queue보다 시간적으로 효율적이다
 '''
 from collections import deque
 import sys
