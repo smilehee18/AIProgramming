@@ -13,11 +13,13 @@ def calcul_word(words):
     for word in words:
         stack = []
         for char in word:
+            #스택의 최상단 stack[-1]과 현재 char 값을 비교 -> peek() 역할
             if(len(stack) == 0 or stack[-1]!=char):
                 stack.append(char)
+            #스택의 최상단 값과 현재 값이 일치할 경우 (A-A, B-B) pop()
             else:
                 stack.pop()
-        if(len(stack) == 0): cnt+=1
+        if(len(stack) == 0): cnt+=1 #스택이 비어있으면(다 뺐으면) 좋은 단어
     print(cnt)
 
 words = []
