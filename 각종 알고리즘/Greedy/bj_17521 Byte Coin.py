@@ -15,13 +15,11 @@ isBuy가 True일 때, 가지고 있는 코인을 다 팔아버림
 바뀌는 시점(사는 시점, 파는 시점)을 정확히 파악하자
 '''
 coin = []
-series = []
 n, w = map(int, sys.stdin.readline().split())
 
 for _ in range(n):
     coin.append(int(sys.stdin.readline()))
 
-start = 0
 isBuy = False
 for i in range(n-1):
     #코인 구매해야 할 때 
